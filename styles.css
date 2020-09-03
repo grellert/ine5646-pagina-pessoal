@@ -1,0 +1,160 @@
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  padding: 1.2em;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  padding: 1em;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.main_section {
+  flex: 3 0px; 
+  text-align: justify;
+  background: white;
+  color: black;
+}
+
+.main_section > p{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.sidebar {
+  flex: 1 0 0;
+  text-align: left;
+  background: #D9EFF0;
+  color: black;
+}
+
+nav {
+  z-index: 1;
+  right: 0;
+}
+
+nav > ul{
+  text-align:left;
+  margin:auto;
+}
+
+nav > ul > ul{
+  list-style-type: none;
+  margin-left: -2em;
+}
+
+.sidebar_img{
+  text-align:center;
+  width:75%;
+  padding: 1.2em;
+  display:block;
+  margin:auto;
+}
+.contact_info{
+  margin-top: -1em;
+}
+
+.contact_info_short{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    flex: 1 100%;
+    column-count: 2;
+    column-count: 2;
+  }
+  .main_section > p{
+    text-align: left;
+  }
+  nav{
+    margin: auto;
+  }
+  .sidebar_img{
+    display: none;
+  }
+  .contact_info{
+    display: none;
+  }
+  .contact_info_short{
+    display: block;
+  }
+}
+
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.class_title{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.class_subtitle{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.pub_item{
+  text-align: left;
+  font-size: min(3vw, 12px);
+  margin-bottom: 1em;
+}
+.year_header{
+  font-size: 1.3em;
+  font-weight: bold;
+
+}
+
+.conf{
+  background-color: blue;
+  border-radius: 30%;
+  color: white;
+  font-weight: bold;
+  padding: 0 0.4em 0 0.3em;
+}
+
+.jour{
+  background-color: green;
+  border-radius: 30%;
+  color: white;
+  font-weight: bold;
+  padding: 0 0.4em 0.1em 0.4em;
+}
+
+.icone-doi{
+    width:25px;
+    height:25px;
+    background:transparent;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+.icone-doi:before{
+    content: '';
+    background:url('https://ictp.acad.ro/wp-content/uploads/2017/10/doi.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+}
+

@@ -1,0 +1,45 @@
+
+.pub_item{
+  text-align: left;
+  font-size: min(3vw, 12px);
+  margin-bottom: 1em;
+}
+.year_header{
+  font-size: 1.3em;
+  font-weight: bold;
+
+}
+
+.conf{
+  background-color: blue;
+  border-radius: 30%;
+  color: white;
+  font-weight: bold;
+  padding: 0 0.4em 0 0.3em;
+}
+
+.jour{
+  background-color: green;
+  border-radius: 30%;
+  color: white;
+  font-weight: bold;
+  padding: 0 0.4em 0.1em 0.4em;
+}
+
+.icone-doi{
+    width:25px;
+    height:25px;
+    background:transparent;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+.icone-doi:before{
+    content: '';
+    background:url('https://ictp.acad.ro/wp-content/uploads/2017/10/doi.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+}
